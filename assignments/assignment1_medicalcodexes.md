@@ -85,6 +85,8 @@ For **each** of the 7 medical codexes, create a Python script that:
 - Read the raw data file(s) in their native format
 - Validate data integrity (check for required fields, detect corruption)
 - Log any data quality issues found
+- Which data files? 
+    - Based on what I have provided in my example scripts, only load the example fize that I have referenced in my python file. Some of the medical codexes like RXnorm and SnowMed contains dozens of files. You have the option of either just working with the one that I have identified, or you can identify your own. 
 
 #### Data Cleaning & Standardization
 - Handle missing or null values appropriately

@@ -3,6 +3,11 @@ import sqlite3
 # create a simple SQLite database and a table
 sqlite3.connect('example.db')
 
+
+
+
+
+
 # connect to the database
 conn = sqlite3.connect('example.db')
 

@@ -1,9 +1,11 @@
 import pandas as pd
 from sqlalchemy import create_engine
+import gc # garbage collector
 
 ## load in .sql file as string:
 with open('Module2_dbs/patient_query.sql', 'r') as file:
     sql_depression_query = file.read()
+
 
 db_location = 'example.db'
 
@@ -17,6 +19,8 @@ query_anxiety = "SELECT * FROM patients_details WHERE primary_icd10 = 'F41.9'"
 
 results_df = pd.read_sql_query(query_anxiety, con=engine)
 len(results_df)
+
+
 
 
 query_x = "SELECT * FROM patients_details WHERE primary_icd10 = 'M54.5'"

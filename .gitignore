@@ -1,6 +1,9 @@
 # Mac specific files
 .DS_Store
 
+# Ignore the csv
+.csv
+
 # Ignore the sqlite db
 example.db
 
